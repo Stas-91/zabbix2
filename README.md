@@ -120,7 +120,7 @@ services:
       - PomelnikovSV-my-netology-hw
 
 ```
-![Название скриншота](ссылка на скриншот)`
+![start_docker](img/start_docker_compose.jpg)`
 
 ### Задание 8
 
