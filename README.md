@@ -55,6 +55,12 @@
 3. `Cоздайте Data Source Prometheus (Home -> Connections -> Data sources -> Add data source -> Prometheus -> указать "Prometheus server URL = http://prometheus:9090" -> Save & Test).`
 4. `Создайте график на основе добавленной в пункте 5 метрики (Build a dashboard -> Add visualization -> Prometheus -> Select metric -> Metric explorer -> <ваши фамилия и инициалы -> Apply.`
 
+В качестве решения приложите:
+
+docker-compose.yml целиком;
+скриншот команды docker ps после запуске docker-compose.yml;
+скриншот графика, постоенного на основе вашей метрики.
+
 ```
 version: '3.7'
 
@@ -127,15 +133,17 @@ services:
 
 1. `Остановите и удалите все контейнеры одной командой.`
 
+В качестве решения приложите скриншот консоли с проделанными действиями.
+
 ![stop_docker](img/stop_docker_compose.jpg)
 
 ### Задание 9
 
-`Приведите ответ в свободной форме........`
-
 1. `Создайте конфигурацию docker-compose для Alertmanager с именем контейнера <ваши фамилия и инициалы>-netology-alertmanager.`
 2. `Добавьте необходимые тома с данными и конфигурацией, сеть, режим и очередность запуска.`
 3. `Обновите конфигурацию Prometheus (необходимые изменения ищите в презентации или документации) и перезапустите его.`
+
+В качестве решения приложите скриншот с событием из Alertmanager.
 
 ![alert](img/alert_z9.jpg)
 
