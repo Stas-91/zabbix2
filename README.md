@@ -40,6 +40,10 @@ https://github.com/Stas-91/github_dz/commit/6bb4acf1c5848e51b9c62ed62c9269d6dc33
 
 В качестве ответа добавьте ссылку на этот коммит в ваш md-файл с решением.
 
+
+### Решение 2
+https://github.com/Stas-91/github_dz/commit/7c0f0bc88a6cde844352c0e7e1704d98fad1a37e
+
 ---
 
 ### Задание 3
