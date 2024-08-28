@@ -65,6 +65,9 @@ https://github.com/Stas-91/github_dz/commit/7c0f0bc88a6cde844352c0e7e1704d98fad1
 
 ![скрин для Git](https://github.com/netology-code/sdvps-homeworks/assets/77622076/e73589cf-7e97-40e5-ac01-d1d55376f1b9)
 
+### Решение 3
+https://github.com/Stas-91/github_dz/network
+
 ---
 ## Дополнительные задания* (со звёздочкой)
 
