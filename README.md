@@ -143,8 +143,38 @@ esac
 ### Решение 7
 
 ```
+import sys
+import os
+import re
+from datetime import datetime
 
+# Проверка на наличие аргументов
+if len(sys.argv) < 2:
+    print("Error: No arguments provided")
+    sys.exit(1)
 
+# Если введено просто 1 или 2
+if sys.argv[1] == '1':
+    print("PomelnikovSV")
+elif sys.argv[1] == '2':
+    print(datetime.now().strftime("%Y-%m-%d"))  # Выводим текущую дату
+# Проверяем, что аргументов 2 для других команд
+elif len(sys.argv) == 3:
+    if sys.argv[1] == '-ping':  # Если -ping
+        result = os.popen("ping -c 1 " + sys.argv[2]).read()  # Делаем пинг по заданному адресу
+        result = re.findall(r"time=(.*) ms", result)  # Выдёргиваем из результата время
+        if result:
+            print(result[0])  # Выводим результат в консоль
+        else:
+            print("Ping failed or no response time found")
+
+    elif sys.argv[1] == '-simple_print':  # Если -simple_print
+        print(sys.argv[2])  # Выводим в консоль содержимое sys.argv[2]
+
+    else:  # Если неизвестный ключ
+        print(f"unknown input: {sys.argv[1]}")
+else:
+    print("Error: Invalid number of arguments")
 ```
 
 ![2zab1](img/3zab7.jpg)
